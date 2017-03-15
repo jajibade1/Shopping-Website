@@ -1,0 +1,329 @@
+body{
+    
+    font: 15px/1.5 sans-serif, fantasy;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+#payments input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+/* global */
+.container{
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+
+ul{
+  padding:0;
+margin: 0;
+}
+
+.button1{
+    height: 38px;
+    background: #fa3000;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+header{
+background: #35424a;
+color: white;
+padding-top: 30px;
+min-height: 70px;
+border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    
+color: white;   
+text-decoration: none;
+    text-transform: uppercase;
+    font-size:16px;
+}
+ 
+
+header li{
+display: inline;
+float: left;
+padding: 5px 20px 0px 20px;
+}
+
+header #branding{
+float: left;
+}
+
+header #branding h1{
+margin:0;
+}
+
+header nav{
+float: right;
+margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+color: red;
+    font-weight: bold;
+}
+
+.dark{
+padding: 15px;
+background: #35424a;
+color: #ffffff;
+    margin-top: 10px;
+margin-bottom: 10px;    
+}
+
+/* Showcase */
+
+#showcase{
+min-height: 300px;
+text-align: center;
+    color: white;
+    background-color: grey;
+}
+
+#showcase p{
+
+font-size: 20px;
+text-align: center;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+font-size: 20px;
+text-align: center;
+}
+
+/* newsletter*/
+#newsletter{
+    padding: 15px;
+    color: white;
+    background:#35424a; 
+}
+
+#newsletter h1{
+    float: left;
+}
+    
+#newsletter form{
+    margin-top: 15px;
+    float:right;
+}
+
+#newsletter input[type="text"]{
+    padding: 4px;
+    height: 25px;
+    width:150px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width:150px;
+}
+
+#newsletter input[type="textarea"]{
+    padding: 4px;
+    height: 50px;
+    width:150px;
+}
+
+#sidebar input[type="text"]{
+    padding: 4px;
+    height: 25px;
+    width:150px;
+}
+
+#sidebar input[type="textarea"]{
+    padding: 4px;
+    height: 25px;
+    width:150px;
+}
+/*Boxes*/
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+  float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .specialbox{
+  float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .specialh1{
+font-size: 40px;
+    text-align: center;
+}
+
+#boxes .box img{
+ width: 90px;
+    height: auto;
+}
+
+ul#contact li{
+list-style: none;
+padding: 20px;
+border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+footer{
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
+#newsletter button, .quote button{
+    display: block;
+    width: 100%;
+}
+
+#contact_form button, .quote button{
+    display: block;
+    width: 100%;
+}
+
+#contact_form form input[type="email"],.quote button{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#contact_form form input[type="textarea"]{
+    width: 100%;
+
+}
+
+/* Main-Col*/
+
+article#main-col{
+    
+    float: left;
+    width: 65%
+}
+
+table{
+    color: #e8491d;
+    text-align: center;
+}
+
+/* media queries*/
+
+@media(max-width: 768px){
+header #branding,
+    header nav,
+    header nav li,
+    #payments,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    #specialbox .box,
+    article#main-col,
+    table, td, tr,#table,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+    
+    #showcase h1{
+        margin-top: 40px;
+    }
+    
+    #newsletter button{
+        display: block;
+        width: 100%
+    }
+    
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+      #newsletter form input[type="text"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    
+    #sidebar button{
+        display: block;
+        width: 100%
+    }
+    
+    #sidebar form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+      #sidebar form input[type="text"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    #sidebar form input[type="textarea"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    /* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block;
+	}
+	
+#payments input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+

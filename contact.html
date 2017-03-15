@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Acme Web Design | Contact Us </title>
+<meta name="viewport" content="width=device-width, intial-scale=1">
+<meta charset="uft-8">
+<link rel="stylesheet" type="text/css" href="shoppingcart.css">
+<meta name="author" content="Jamie Ajibade">
+    
+<script>
+    function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+    </script>
+    <script>
+    function request() {
+    alert("Request has been sent! Please Check email.");
+}
+    
+    </script>
+</head>
+
+<body>
+ <header>
+  <div class="container">
+    <div id="branding">
+     <h1><span class="highlight">Jamie's</span> Shopping Website</h1>  
+      </div>
+      <nav>
+      <ul>
+         <li><a href="index.html">Home </a></li> 
+            <li><a href="about.html">About </a></li> 
+                <li><a href="shoppingcart.html"> Cart </a></li> 
+          <li class="current"><a href="contact.html">Contact Us </a></li>
+     </ul>
+      </nav>
+     </div>  
+    </header>
+    
+<section id="newsletter">
+<div class="container">
+<h1>Suscribe to our newsletter</h1>   
+<form>
+<input type="text"  placeholder="Full Name" name="name">
+<input type="email"  placeholder="test1@gmail.com" name="name">
+<button type="submit" class="button1" onclick="request()">Submit</button> 
+</form>
+    </div>    
+    </section>   
+    
+    
+<section id="main">
+    
+ <div class="container">
+<article id="main-col"> 
+<ul id="contact">
+    <h3>Telephone</h3>
+<li>
+<p>
+    
+Telephone: 0800 019</p>
+    
+   <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+    </li>
+    <h3>Office</h3>
+    <li>
+    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+     </li>
+    
+    <h3>Office</h3>
+    <li>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1vTqJ_w8fZ33HZIM5GP6RvLDkf4w&hl=en" width="640" height="480"></iframe>
+     </li>
+        
+    </ul>
+    </article>
+    
+    
+    <aside id="sidebar">
+        <div class="dark">
+     <h3>Send Message</h3>
+    <form>
+ <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Your name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" required /><br />
+	</div>
+	<div class="row">
+		<label for="email">Your email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" required width=100% /><br />
+	</div>
+	<div class="row">
+		<label for="message">Your message:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30" required width="100%"></textarea><br />
+	</div>
+	<button type="submit" class="button1" value="Send Email">Submit</button> 
+</form>			
+</form>
+     </div>
+     </aside>
+    </div>  
+    
+    
+    </section>
+    
+    <footer>
+    
+    
+    <p>Acme Web Design, Copyright &copy; 2017</p>
+    </footer>
+</body>  
+    
+</html>
